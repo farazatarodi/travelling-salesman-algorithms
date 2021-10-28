@@ -23,7 +23,7 @@ from report import reportGenerator
 #             heapGenerate(k-1, array)
 
 
-length = 10
+length = 5
 
 startPoint = [0, 0]
 
