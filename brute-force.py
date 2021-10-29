@@ -43,7 +43,7 @@ for i in range(len(x)):
 
 minCost = np.Inf
 
-routes = it.permutations(range(1, len(x)))
+routes = list(it.permutations(range(1, len(x))))
 
 for route in routes:
     totalCost = c[0][route[0]]+c[route[-1]][0]
@@ -72,6 +72,6 @@ plt.scatter(x, y)
 
 plt.plot(minX, minY)
 
-reportGenerator(x, y, c, minCost, minRoute)
+reportGenerator(x, y, c, minCost, minRoute, len(routes))
 
 plt.show()
